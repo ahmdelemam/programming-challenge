@@ -10,7 +10,9 @@ gem 'rails'
 
 gem 'dotenv-rails'
 gem 'foreman'
-gem 'mysql2'
+#gem 'mysql2'
+gem 'sqlite3', '~> 1.3.6'
+gem 'will_paginate', '~> 3.1.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
@@ -18,6 +20,12 @@ gem 'jbuilder'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
+
+  gem 'factory_bot_rails', '~> 4.0'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'faker'
+  gem 'database_cleaner'
+  gem 'pry', '~> 0.12.2'
 end
 
 group :development do
